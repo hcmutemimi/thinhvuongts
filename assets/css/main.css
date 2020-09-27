@@ -259,7 +259,9 @@ ul {
 }
 .carousel-service--button:hover {
     background-color: #0071BD;
+    cursor: pointer;
 }
+
 .sub__navbar {
     position: relative;
     height: 50px;
@@ -280,7 +282,7 @@ ul {
     font-weight: 600; 
     color: #fff;
     background-color: #7e8387;
-    box-shadow: 0 4px 14px rgba(0,0,0,.2);
+    box-shadow:0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
    
 }
 .sub__navbar-list li:hover {
@@ -288,13 +290,14 @@ ul {
 }
 .sub__content {
     background-color: #ececec;
-    height: 1700px ;
+    height: 1110px ;
+    margin-bottom: 83px;
 }
 .sub__content-title {
     font-family:'Montserrat', sans-serif;
     width: 900px;
     margin: 0 auto;
-    padding: 70px 20px;
+    padding: 54px 20px 0;
 }
 .content {
     position: relative;
@@ -307,11 +310,149 @@ ul {
 .sub__content-back--title {
     position: relative;
     width: 100%;
-    bottom: 151px;
-    height: 180px;
+    bottom: 87px;
+    height: 199px;
     background-color: #5F676C;
     z-index: 1;
 }
 .sub__navbar-list li:first-child {
     background-color: var(--main-color);
 }
+.video__center {
+    display: block;
+    background: url('https://i.pinimg.com/originals/73/26/4e/73264ebc46c4ec0a7eb9147f6802f559.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px ;
+}
+.video__title {
+    height: 100px;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video__link {
+    display: flex;
+    justify-content: center;
+}
+.organizational-chart--image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+.organizational-chart--title {
+    padding-top: 40px;
+    color: #7e8387;
+    font-weight: 650;
+    font-family: 'Montserrat', sans-serif;;
+    
+}
+.partners {
+    height: 1020px;
+    background-image: url('https://www.ancuong.com/pictures/catalog/background/bg.jpg');
+}
+.partners__list {
+    padding: 0 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.partners__list li {
+    margin: 10px 20px 30px;
+}
+.partners__item--image{
+    width: 280px;
+    height: 220px;
+    padding: 14px;
+    border: 1px #fff solid;
+}
+.partners__item--title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    color: #757272;
+    font-size: 20px;
+}
+.partners__item.on-show {
+    animation-name: GoWidth;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.counselors {
+    display: flex;
+    padding: 10px 60px 80px;
+    font-family:'Montserrat', sans-serif;
+    align-items: center;
+}
+.counselors__title {
+   align-items: center;
+}
+.counselors__mail:hover {
+   text-decoration: none;
+}
+.counselors__left-title {
+    padding-left: 30px;
+}
+.counselors__left-image--item, .counselors__right-image--item  {
+    height: 260px;
+    width: 400px;
+    transform: translateZ(0);
+}
+.counselors__left-image--item.on-show {
+    transform: translate3d(0px, 0px, 0px);
+}
+.counselors__right-title {
+    padding-right: 30px;
+}
+.text-align--right {
+    text-align: right;
+}
+.counselors__left-image--item.on-show {
+    position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: color 1000ms;
+  transition: color 1000ms;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1)
+}
+.counselors__left-image--item.on-show ::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098d1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out ;
+}
+.counselors__left-image--item:ho ::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098d1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out ;
+}
+

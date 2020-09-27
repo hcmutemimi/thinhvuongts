@@ -17,11 +17,18 @@ html {
 body {
     margin: 0;
 }
-
+#particles-js {
+    /* background: #f00 */
+    background-image: url();
+}
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
     z-index: 2;
+}
+.main-color {
+    color: var(--main-color);
+
 }
 @keyframes fadeInTopHeader {
     from {
@@ -72,17 +79,36 @@ body {
 }
 @keyframes ButtonBanner {
     from {
-        opacity: 0;
-       
+        opacity: 0;   
     }
 
     to {
-        opacity: 1;
-       
+        opacity: 1;      
     }
 }
-
-.main-color {
-    color: var(--main-color);
-
+@keyframes GoWidth {
+    0% {
+        transform: scaleX(0)
+    }
+    to {
+        transform: scaleX(1)
+    }
 }
+@keyframes GoLeft {
+    from {
+        transform: translateX(-30px)
+    }
+    to {
+      transform: translateX(0)
+    }
+}
+.js .wow {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: all 0.5s 0.5s ease-out;
+  }
+  /* Wow.js puts in a "animated" class */
+  .js .animated {
+    opacity: 1;
+    transform: none;
+  }
