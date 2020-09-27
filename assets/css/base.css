@@ -94,20 +94,21 @@ body {
         transform: scaleX(1)
     }
 }
+
 @keyframes GoLeft {
     from {
-        transform: translateX(-30px)
+        right: 100%;
     }
     to {
-      transform: translateX(0)
+     right: 0;
     }
 }
+/* WOW js */
 .js .wow {
     opacity: 0;
     transform: translateY(1em);
-    transition: all 0.5s 0.5s ease-out;
+    transition: all 0.4s 0.4s ease-out;
   }
-  /* Wow.js puts in a "animated" class */
   .js .animated {
     opacity: 1;
     transform: none;
